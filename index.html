@@ -5,7 +5,7 @@
   <meta name="author" content="Amanda Sokolowski">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Magic Eight Ball</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <div class="eight-ball">
@@ -15,7 +15,7 @@
   </div>
 
   <script>
-    // possible responses
+    // 8 responses
     var responses = [
       "Definitely yes.",
       "Most likely.",
@@ -26,22 +26,20 @@
       "Signs point to yes.",
       "Outlook not so good."
     ];
-
-    // Loop until the user cancels
-    var again;
-    do {
+    var again = true;
+    while (again) {
       var question = prompt("Ask a yes-or-no question:");
-      if (question === null) break;  
+      if (question === null) { break; }
 
-      // Pick a random answer
-      var random = Math.floor(Math.random() * responses.length);
-      var reply = responses[random];
+      var idx = Math.floor(Math.random() * responses.length);
+      var reply = responses[idx];
 
-      // Display
+      
       document.getElementById("answer").textContent = reply;
 
+      
       again = confirm("Shake again?");
-    } while (again);
+    }
   </script>
 </body>
 </html>
