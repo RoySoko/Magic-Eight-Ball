@@ -5,19 +5,19 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #000;   
+  background-color: #000; 
 }
 
 .eight-ball {
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  background-color: #fff;   
+  background-color: #fff; 
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 0 8px rgba(255,255,255,0.2), 
-              0 4px 16px rgba(0,0,0,0.5);
+  box-shadow: 0 0 0 8px rgba(255,255,255,0.2),
+              0 6px 24px rgba(0,0,0,0.6);
 }
 
 .ball-face {
@@ -28,13 +28,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 8px;
 }
 
-.ball-face p {
+#answer {
   margin: 0;
-  padding: 0;
-  color: #0f0;               
+  color: #0f0;       
   font-family: sans-serif;
   font-size: 1rem;
   text-align: center;
 }
+
+
